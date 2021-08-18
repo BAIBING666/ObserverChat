@@ -22,9 +22,9 @@ public class ResponseServer implements Oberver {
         this.client = client;
     }
 
-    public void sayHello() {
-        System.out.println("server say hello");
-        String resp = "server return hello";
+    public void sayHello(String word) {
+        System.out.println("server say hello"+word);
+        String resp = "server return hello"+word;
         this.onNext(resp);
     }
 }

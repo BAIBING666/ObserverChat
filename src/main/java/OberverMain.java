@@ -8,7 +8,7 @@ public class OberverMain {
 
     public static void main(String[] args) {
         RequestClient client = new RequestClient();
-        String result = client.sayHello();
+        String result = client.sayHello("你好");
         System.out.println("final result =" + result);
     }
 }

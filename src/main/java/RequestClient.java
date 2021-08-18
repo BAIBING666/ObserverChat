@@ -8,10 +8,10 @@ public class RequestClient {
 
     public String resp;
 
-    public String sayHello() {
+    public String sayHello(String word) {
         ResponseServer server = new ResponseServer();
         server.addObserver(this);
-        server.sayHello();
+        server.sayHello(word);
         return this.resp;
     }
 }
