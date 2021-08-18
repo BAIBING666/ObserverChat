@@ -14,7 +14,7 @@ public class ResponseServer implements Oberver {
 
     @Override
     public void onNext(String resp) {
-        this.client.resp=resp;
+        this.client.resp = resp;
     }
 
     @Override
